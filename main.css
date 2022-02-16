@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.navbar-brand{
+background: transparent,
+}
+
+.head1{
+    color: white;
+    top: 24%;
+    left: 5%;
+    position: relative;
+}
+
+.head2{
+    color: yellow;
+    top: 25%;
+    left: 5%;
+    position: relative;
+}
+
+.leftbody{
+width: 65%;
+height: 900px;
+background: rgb(37, 36, 36);
+position: relative;
+top: 0px;
+overflow: hidden;
+}
+
+.rightbody{
+width: 100%;
+height: 900px;
+background-image: url("yellow.png");
+background-size:cover;
+position: relative;
+top: 0px;
+overflow: hidden;
+}
+
+.title{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 40rem;
+    font-size: 4rem;
+    text-align:center;
+
+}
+
+
+.card{
+    bottom: 720px;
+    left: 73%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 100px;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 20%;
+    box-shadow: 10px 10px 5px grey;
+    
+}
+
+
+.bubbles{
+    width: 30%;
+    display:block;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    margin: right 100px;
+    
+}
