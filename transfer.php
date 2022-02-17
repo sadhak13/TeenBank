@@ -181,7 +181,7 @@ else {
               </td>
               <td style="text-align: center;">
                   
-                    <button href="home.html" class="btn btn-primary">Cancel</button>
+                    <a href="home.html" class="btn btn-primary">Cancel</a>
                   
               </td>
             </tr>
