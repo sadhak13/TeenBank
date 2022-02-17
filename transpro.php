@@ -7,15 +7,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $row=0; 
     $conn = mysqli_connect('localhost','root','','thirteen bank') or die("connection failed".mysqli_connect_error());
-    $query = mysqli_query($conn,"SELECT TotalAmt from details WHERE Name = '$fromname' OR Name = '$toname'");
-
-    $i=0;
+    
     $bal=array();
 
+    $query = mysqli_query($conn,"SELECT TotalAmt from details WHERE Name = '$fromname'");
     $row = mysqli_num_rows($query); if($row>0) {
         while($row = mysqli_fetch_assoc($query)) { 
-            $bal[$i]=$row['TotalAmt'];
-            $i++;
+            $bal[0]=$row['TotalAmt'];
+        }
+    }
+    $query = mysqli_query($conn,"SELECT TotalAmt from details WHERE Name = '$toname'");
+    $row = mysqli_num_rows($query); if($row>0) {
+        while($row = mysqli_fetch_assoc($query)) { 
+            $bal[1]=$row['TotalAmt'];
         }
     }
 
